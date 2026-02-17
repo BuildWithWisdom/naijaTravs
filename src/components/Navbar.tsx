@@ -21,24 +21,38 @@ export function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-blue-600 font-medium text-sm">
-              Home
-            </Link>
-            <Link to="/" className="text-gray-600 hover:text-blue-600 font-medium text-sm transition-colors">
-              Services
-            </Link>
-            <Link to="/packages" className="text-gray-600 hover:text-blue-600 font-medium text-sm transition-colors">
-              Holiday & Study
-            </Link>
+          <div className="hidden md:flex items-center space-x-6">
+            {[
+              { to: '/', label: 'Home' },
+              { to: '/services', label: 'Services' },
+              { to: '/packages', label: 'Holiday & Study' },
+            ].map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                activeOptions={{ exact: link.to === '/' }}
+                className="relative py-2 text-sm font-semibold transition-colors duration-200 text-slate-700 hover:text-blue-600 group uppercase tracking-wide"
+              >
+                {({ isActive }) => (
+                  <>
+                    {link.label}
+                    <span 
+                      className={`absolute -bottom-1 left-0 h-0.5 bg-blue-600 transition-all duration-300 ${
+                        isActive ? 'w-full opacity-100' : 'w-0 opacity-0 group-hover:w-full group-hover:opacity-100'
+                      }`} 
+                    />
+                  </>
+                )}
+              </Link>
+            ))}
           </div>
 
           {/* CTA & Auth */}
-          <div className="hidden md:flex items-center space-x-4">
-            <button className="text-gray-600 hover:text-blue-600 font-medium text-sm transition-colors">
+          <div className="hidden md:flex items-center space-x-6">
+            <button className="text-slate-700 hover:text-blue-600 font-semibold text-sm transition-colors cursor-pointer uppercase tracking-wide">
               Log In
             </button>
-            <Button className="font-semibold bg-blue-600 text-white hover:bg-blue-700 rounded-md px-6">
+            <Button className="font-bold bg-blue-600 text-white hover:bg-blue-700 rounded-md px-6 cursor-pointer shadow-sm hover:shadow-md transition-all uppercase tracking-wide text-xs">
               Book Consultation
             </Button>
           </div>
@@ -61,7 +75,7 @@ export function Navbar() {
           <Link to="/" className="text-blue-600 font-medium text-sm p-2 hover:bg-gray-50 rounded-md">
             Home
           </Link>
-          <Link to="/" className="text-gray-600 font-medium text-sm p-2 hover:bg-gray-50 rounded-md">
+          <Link to="/services" className="text-gray-600 font-medium text-sm p-2 hover:bg-gray-50 rounded-md">
             Services
           </Link>
           <Link to="/packages" className="text-gray-600 font-medium text-sm p-2 hover:bg-gray-50 rounded-md">
