@@ -32,10 +32,10 @@ export function Hero() {
           </p>
           
           <div className="flex flex-col min-[340px]:flex-row gap-4 mb-8">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-4 sm:px-6 py-6 h-auto min-h-[48px] text-sm font-semibold shadow-lg shadow-blue-900/20 transition-all hover:scale-105 hover:shadow-xl w-full min-[450px]:w-auto whitespace-normal sm:whitespace-nowrap">
-              Start Your Journey <span className="ml-2 hidden sm:inline">→</span>
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-4 sm:px-6 h-auto min-h-[48px] text-sm font-semibold shadow-lg shadow-blue-900/20 transition-all hover:scale-105 hover:shadow-xl w-full min-[450px]:w-auto whitespace-normal sm:whitespace-nowrap">
+              View Packages <span className="ml-2 hidden sm:inline">→</span>
             </Button>
-            <Button size="lg" variant="outline" className="bg-white/10 text-white border-white/30 hover:bg-white/20 rounded-md px-4 sm:px-6 py-6 h-auto min-h-[48px] text-sm backdrop-blur-md transition-all hover:scale-105 w-full min-[450px]:w-auto whitespace-normal sm:whitespace-nowrap">
+            <Button size="lg" variant="outline" className="bg-white/10 text-white border-white/30 hover:bg-white/20 rounded-md px-4 sm:px-6 text-sm backdrop-blur-md transition-all hover:scale-105 w-full min-[450px]:w-auto whitespace-normal sm:whitespace-nowrap">
               <span className="mr-2">▶</span> Watch Video
             </Button>
           </div>

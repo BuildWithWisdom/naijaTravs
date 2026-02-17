@@ -41,8 +41,10 @@ function PackagesPage() {
 
             {/* Sidebar - Desktop & Mobile Drawer */}
             <aside className={`
-              fixed inset-0 z-50 lg:z-10 bg-white lg:bg-transparent p-6 transition-transform duration-300 transform lg:transform-none lg:sticky lg:top-36 lg:block lg:w-3/12 lg:p-0 h-full lg:h-fit overflow-y-auto lg:overflow-visible
-              ${isMobileFiltersOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
+              lg:z-10 bg-white lg:bg-transparent p-6 transition-transform duration-300 transform lg:transform-none lg:sticky lg:top-36 lg:block lg:w-3/12 lg:p-0 h-full lg:h-fit overflow-y-auto lg:overflow-visible
+              ${isMobileFiltersOpen 
+                ? 'fixed inset-0 z-[110] translate-x-0 opacity-100 pointer-events-auto' 
+                : 'fixed inset-0 -z-10 -translate-x-full lg:static lg:z-auto lg:translate-x-0 opacity-0 lg:opacity-100 pointer-events-none lg:pointer-events-auto'}
             `}>
               <div className="flex justify-between items-center mb-6 lg:hidden">
                 <h2 className="text-xl font-bold">Filters</h2>
