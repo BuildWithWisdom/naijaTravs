@@ -12,7 +12,7 @@ export function Footer() {
               <div className="bg-blue-600 p-1.5 rounded-lg">
                 <Plane className="h-5 w-5 text-white" />
               </div>
-              <span className="font-bold text-lg sm:text-xl tracking-tight text-slate-900">
+              <span className="font-bold text-sm md:text-lg sm:text-xl tracking-tight text-slate-900">
                 BlueHQ Travels
               </span>
             </div>
