@@ -13,7 +13,7 @@ export function Footer() {
                 <Plane className="h-5 w-5 text-white" />
               </div>
               <span className="font-bold text-xl tracking-tight text-slate-900">
-                NaijaTravels
+                BlueHQ Travels
               </span>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed">

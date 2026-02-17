@@ -2,7 +2,7 @@ import { Quote } from 'lucide-react'
 
 const testimonials = [
   {
-    quote: "The visa process for my Master's in the UK was seamless. NaijaTravels guided me through every document. I got my visa in 3 weeks!",
+    quote: "The visa process for my Master's in the UK was seamless. BlueHQ Travels guided me through every document. I got my visa in 3 weeks!",
     name: "Chiamaka Adebayo",
     role: "Student, UK",
     avatar: "https://images.unsplash.com/photo-1589156191108-c762ff4b96ab?q=80&w=200&auto=format&fit=crop"

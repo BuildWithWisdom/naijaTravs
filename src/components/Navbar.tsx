@@ -16,7 +16,7 @@ export function Navbar() {
               <Plane className="h-5 w-5 md:h-6 md:w-6 text-white" />
             </div>
             <span className="font-bold text-base md:text-xl tracking-tight text-slate-900 truncate">
-              NaijaTravels
+              BlueHQ Travels
             </span>
           </div>
 
