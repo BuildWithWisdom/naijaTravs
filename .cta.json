@@ -9,7 +9,7 @@
   "version": 1,
   "framework": "react-cra",
   "chosenAddOns": [
-    "netlify",
+    "nitro",
     "shadcn"
   ]
 }
